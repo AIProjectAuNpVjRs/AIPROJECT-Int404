@@ -1,15 +1,18 @@
 def TOH(q , f, t, a): 
     if q == 1: 
-        print ("Take disk 1 from rod",f,"to rod",t )
-        return
-    TOH(q-1, f, a, t) 
-    print ("Take disk",q,"from rod",f,"to rod",t )
-    TOH(q-1, a, t, f) 
+        print ("Take disk 1 from ",f,"to ",t )
+    else:
+        TOH(q-1, f, a, t) 
+        print ("Take disk",q,"from ",f,"to ",t )
+        TOH(q-1, a, t, f) 
            
-q =int(input("Enter no. of Disks="))
-TOH(q, 'A', 'C', 'B')  
-
+q =int(input("Enter No.of Disks="))
+TOH(q, 'Peg A', 'Peg C', 'Peg B') 
 
 
 *** this code uses recursion ***
+*** here q is var that stores no of disks
+and as per coditions of Tower of hanoi 
+it uses recursion and recurce it till 
+it finds q =1 and start printing the result***
     
