@@ -14,5 +14,5 @@ TOH(q, 'Peg A', 'Peg C', 'Peg B')
 *** here q is var that stores no of disks
 and as per coditions of Tower of hanoi 
 it uses recursion and recurce it till 
-it finds q =1 and start printing the result**
+it finds q =1 and start printing the result***
     
